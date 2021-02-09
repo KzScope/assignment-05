@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* background-color: gainsboro; */
+}
+
+.navbar {
+    background-color: rgba(134, 35, 214, 0.884);
+    color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-list a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #dcdcdc;
+}
+.nav-list a:hover{
+    display: inline-block;
+    background-color: rgb(172, 156, 209);
+}
+
+.button{
+    background-color: rgba(134, 35, 214, 0.884);
+    color: gainsboro;
+}
+.searchBox{
+    justify-content: center;
+    background-color: rgba(134, 35, 214, 0.884);
+    color: gainsboro;
+}
+#sorry{
+    display: none;
+}
+#gallery {
+    display: none;
+}
+.gallery-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.category{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.card{
+    border: 2px solid silver;
+    box-shadow: rgb(221, 229, 238);
+    padding: 10px; 
+    min-height: 100px;
+    min-width: 100px;
+    text-align: center;
+    margin: 5px;
+}
+.card-body{
+
+}
+.card-text {
+
+}
