@@ -16,6 +16,7 @@ const empty = '';
 const searchMeal = "https://www.themealdb.com/api/json/v1/1/search.php?f=a";
 const SearchIngredient = 'https://www.themealdb.com/api/json/v1/1/list.php?i=list';
 
+//event handle
 searchBtn.addEventListener('click', function () {
     const searchKey = searchStr.value;
     if (searchKey == empty || 'null') {
@@ -28,12 +29,14 @@ searchBtn.addEventListener('click', function () {
     }
 });
 
+//API Loader
 function dataloader(params) {
     fetch(searchMeal)
         .then(res => res.json())
         .then(data => showData(data));
 };
 
+//Result output
 const showData = result =>{
     for (let i = 0; i < result.length; i++) {
         const item = result[i];
